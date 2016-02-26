@@ -18,11 +18,14 @@
 .off {
 	display: block;
 	position: absolute;
-	z-index: 2px;
+	z-index: 2;
 }
 
 .off-first {
-	margin-top: -55px;
+	display: block;
+	top: 0px;
+	position: absolute;
+	z-index:2;
 }
 
 .tab-img {
@@ -58,4 +61,9 @@
 
 .item-curr {
 	background-color: #eeeeee;
+}
+
+ul li {
+	height: 55px;
+	width: 55px;
 }
