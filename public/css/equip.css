@@ -68,19 +68,3 @@ body {
 	float: left;
 }
 
-
-#base {
-	position: absolute;
-	z-index: 1;
-}
-
-#top { z-index: 3; }
-#bottom { z-index: 2; }
-#hat { z-index: 5; }
-#weapon { z-index: 4; }
-#style { z-index: 6; }
-#pet { z-index: 7; }
-
-.clothes {
-	position: absolute;
-}

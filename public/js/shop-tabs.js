@@ -19,22 +19,37 @@ function initializePage() {
 	
 	$('#reset').click(function() {
 		$('.entries').removeClass("item-curr");
+		$('.clothes').remove();
 	});
 }
 
 function viewItem (e) {
-	var itemID = $(this).attr('id');
+	var itemName = $(this).attr('name');
 	var itemDesc = $(this).attr('alt');
+	var itemType = $(this).attr('type');
+	var itemID	 = $(this).attr('ids');
+	var category = 0;
+	if( itemType=="top" ) category = 1;
+	else if ( itemType=="bottom") category = 2;
+	else if ( itemType=="hat") category = 3;
+	else if ( itemType=="weapon") category = 4;
+	else if ( itemType=="style") category = 5;
+	else category = 6;
 	//console.log("user clicked on item " + itemID);
 
-	$('.desc h1').html(itemID);
+	$('.desc h1').html(itemName);
 	$('.desc p').html(itemDesc);
 
-	if ($(this).hasClass('item-curr'))
+	if ($(this).hasClass('item-curr')) {
 		$(this).removeClass('item-curr');
-	else
+	}
+	else {
+		$('#'+itemType).remove();
 		$(this).addClass('item-curr');
-
+		var imgS = '<img src="';
+		var newItem = imgS.concat('/imgs/items/midi/',itemID,'.png" class="clothes" id="',itemType,'"/>');
+		$('#avvie').append(newItem);
+	}
 	//var url = "/item/" + itemID;
 
 	//$.get(url, callbackItem);

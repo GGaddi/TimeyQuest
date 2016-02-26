@@ -36,7 +36,7 @@ function viewItem (e) {
 	else if ( itemType=="style") category = 5;
 	else category = 6;
 	//console.log("user clicked on item " + itemID);
-	console.log("category: " + category + " type: " + itemType);
+	//console.log("category: " + category + " type: " + itemType);
 	$('.desc h1').html(itemName);
 	$('.desc p').html(itemDesc);
 
