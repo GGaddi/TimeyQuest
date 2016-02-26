@@ -1,0 +1,199 @@
+body {
+	background-image:url("");
+	background-color: #dddddd;
+}
+
+#money {
+	height: 25px;
+	width: 350px;
+}
+
+#money .coins {
+	height: 12px;
+	width: 12px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 7px;
+}
+
+#money .arrow {
+	float: left;
+	margin-top: 3px;
+	margin-left: 40px;
+}
+
+#money .before {
+	padding-left: 20px;
+}
+
+#money .bef {
+	width: 60px !important;
+}
+
+#money .gold {
+	margin-left: 5px;
+	width: 90px;
+	line-height: 25px;
+	display: inline-block;
+	font-family: 'Patua One', cursive;
+	font-size: 18px;
+	text-align: left;
+	float: left;
+}
+
+
+#etabs .items {
+	margin: 0px -10px 0px 9px;
+	background-color: #ffffff;
+	border: solid 2px #ffffff;
+	height: 137px;
+	width: 326px;
+	overflow: hidden;
+	border-bottom: solid 4px #ffffff;
+	position: relative;
+}
+
+#etabs .items .grid {
+	line-height: 0px;
+	text-align: center;
+	height: 137px;
+	width: 350px;
+	overflow: auto;
+	display: none;
+}
+
+.entries {
+	height: 105px;
+	width: 105px;
+	margin: 2px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	background-color: #cccccc;
+}
+
+.thing {
+	height: 80px;
+	width: 80px;
+	margin: 15px 10px 10px 15px;
+}
+
+.entries .price {
+	font-family: 'Patua One',cursive;
+	font-size: 14px;
+	height: 12px;
+	float: left;
+	margin-top: -15px;
+	margin-left: 5px!important;
+	position: relative;
+	z-index: 2;
+}
+
+.entries .coin {
+	float: left;
+	position: relative;
+	z-index: 2;
+	margin-top: -6px;
+	margin-left: 5px;
+	margin-right: 3px;
+}
+
+.entries .level {
+	position: relative;
+	font-family: 'Patua One',cursive;
+	font-size: 15px;
+	height: 15px;
+	margin-top: -90px;
+	width: 105px;
+	z-index: 2;
+}
+
+.entries .owned {
+	height: 12px;
+	width: 12px;
+	position: relative;
+	margin-top: -97px;
+	margin-right: 8px;
+	z-index: 3;
+	float: right;
+}
+
+#buttons {
+	margin: auto;
+	width: 332px;
+	text-align: center;
+	margin-top: 5px;
+	position: relative;
+	z-index: 2;
+}
+
+
+button[type="button"] {
+	height: 35px;
+	width: 293px;
+	border: 0px;
+	background-color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	border-bottom: solid 3px #aaaaaa;
+	font-size: 22px;
+	letter-spacing: -2px;
+	color: #222222;
+	float: left;
+	margin-right: 4px;
+}
+
+.reset {
+	width: 35px;
+	height: 35px;
+	float: left;
+}
+
+.top-marg {
+	margin-top: 5px!important;
+}
+
+.confirm {
+    width: 300px;
+    height: 375px;
+    background: #eeeeee;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 90px;
+    z-index: 4;
+    padding: 25px;
+    text-align: justify;
+    border: solid 2px #ffffff;
+}
+
+.confirm span {
+	float: right;
+	height: 20px;
+	width: 20px;
+	margin-top: -10px;
+	margin-right: -10px;
+	line-height: 20px;
+	font-family: 'Patua One',serif;
+	font-size: 25px;
+}
+
+.confirm h1 {
+  font-family: 'Patua One',cursive;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+.confirm p {
+  font-family: 'Open Sans',sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: normal;
+}

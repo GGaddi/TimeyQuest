@@ -1,0 +1,48 @@
+<!doctype HTML>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="/css/quest.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="/js/quest.js"></script>
+	<script src="/js/help.js"></script>
+	{{> imports}}
+</head>
+
+<body>
+
+	{{> help-quest}}
+
+	<div id="wrap">
+		<div id="content">
+			<div id="backbar">
+				<a href="home"><img src="imgs/home.png"/></a>
+				<div class="trail" style="letter-spacing: -1px;">
+					quest details
+				{{> topbar-back}}
+
+			<form id="quest">
+
+				<h1>take a break</h1>
+				<div id="break-time">
+					every <input type="tel" name="break-hr" value="00" /> hours, <input type="tel" name="break-min" value="30" /> minutes
+				</div>
+
+				<h1>fight a boss</h1>
+				<div id="boss-time">
+					every <input type="tel" name="boss-hr" id = "boss-hr" value="01"/> hours, <input type="tel" name="boss-min" id = "boss-min" value="00"/> minutes
+				</div>
+				<button type="button" name="begin" id = "begin" onclick="location.href = 'adventure';">begin adventure</button>
+			</form>
+		</div>
+
+		{{> stats}}
+
+		{{> menu}}
+	</div>
+
+</body>
+</html>

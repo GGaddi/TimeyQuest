@@ -1,0 +1,106 @@
+<!doctype HTML>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<link rel="stylesheet" type="text/css" href="/css/self.css">
+	<link rel="stylesheet" type="text/css" href="/css/profile.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="/js/self.js"></script>
+	<script src="/js/help.js"></script>
+		{{> imports}}
+</head>
+
+<body>
+
+	{{> help-self}}
+
+	<div id="wrap">
+		<div id="content">
+			{{> topbar-front}}
+				self
+			{{> topbar-back}}
+
+			<div id="self">	
+			<img src="../imgs/avatar-midi.png"/>
+			<div class="desc">
+				<div class="text">
+					<form id="self-form">
+						<h1>
+							<div id="namefield">
+								<script type="text/javascript">
+								var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
+									document.write(user.charName);
+								</script>
+								<a href="#"><img src="imgs/editfield.png"/ id="namebtn"></a>
+							</div>
+						</h1>
+							<!--<p>your personal message goes here</p>-->
+							<div id="messagefield">
+								<script type="text/javascript">
+									//var message = JSON.parse(localStorage.getItem("userAccount"));
+									//var htmlString = "<textarea id='descIn' placeholder=" + user.message + " maxlength='50'></textarea>";
+									var htmlString = "<p id='usermessage'>" + user.message + "</p>";
+									document.write(htmlString);
+								</script>
+							</div>
+							<!--<textarea id="descIn" placeholder=message></textarea>-->
+					</form>
+				</div>
+			</div>
+			</div>
+
+			<div id="info">
+
+
+				<div class="tabs">
+					<img src="imgs/top-tab.png" name="top-tab" title="(shirt name)"/><img src="imgs/bottom-tab.png" name="bottom-tab" title="(bottom name)"/><img src="imgs/hat-tab.png" name="hat-tab" title="(hat name)"/><img src="imgs/weapon-tab.png" name="weapon-tab" title="(weapon name)"/><img src="imgs/stylin-tab.png" name="stylin-tab" title="(accessory name)"/><img src="imgs/pet-tab.png" name="pet-tab" title="(pet name)"/>
+					<!-- use js/jquery in order to replace img name with {{name}}-off.png -->
+				</div>
+
+				<div class="lvl">
+					<div class="bar">&nbsp;</div><h1>LVL 
+					<script type="text/javascript">
+					var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
+					document.write(user.level);
+					</script>
+				</h1><div class="bar">&nbsp;</div>
+				</div>
+
+				<div class="exp">EXPERIENCE</div> <div class="exp-bar">
+					<div class="exp-progress" style="width: 20%">&nbsp;</div>
+				</div>
+				<div class="exp-txt">200/1,000</div>
+
+				<div class="money">
+					<div class="exp mons">MONEY</div> <img src="imgs/moneys.png" class="coin"/> <div class="gold">
+						<script type="text/javascript">
+						var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
+						document.write(user.currency);
+						</script>
+					</div>
+				</div>
+
+				<div class="priv">
+					<input type="checkbox" name="private" value="yes">
+						I don't want to be seen by others.
+					</input>
+				</div>
+					<button type="button" name="save" id = "save">save changes</button>
+				
+			</div>
+
+		</div>
+
+		<div id="navbar">
+			<div id="stats">
+				&nbsp;
+			</div>
+
+			{{> menu}}
+		</div>
+	</div>
+
+</body>

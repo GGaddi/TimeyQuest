@@ -1,0 +1,212 @@
+<!doctype HTML>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<link rel="stylesheet" type="text/css" href="/css/shop.css">
+	<link rel="stylesheet" type="text/css" href="/css/profile.css">
+	<link rel="stylesheet" type="text/css" href="/css/tabs.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="/js/shop-tabs.js"></script>
+	<script src="/js/help.js"></script>
+	<script src="/js/shop.js"></script>
+
+	{{> imports}}
+</head>
+
+<body>
+	{{> checkout}}
+	{{> help-shop}}
+
+	<div id="wrap">
+		<div id="content">
+			{{> topbar-front}}
+				shop
+			{{> topbar-back}}
+
+			<div id="self">	
+				<div id="avvie">
+					<img src="/imgs/avatar-midi.png"/>
+				</div>
+				<div class="desc">
+					<div class="text">
+						<h1>item name</h1>
+						<p>item description goes here</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="money"> 
+				<img src="imgs/moneys.png" class="coins before"/>
+					<div class="gold bef" id="money-before">
+						<script type="text/javascript">
+						var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
+						document.write(user.currency);
+						</script>
+					</div>
+
+				<img src="imgs/change-arrow.gif" class="arrow"/>
+
+				<img src="imgs/moneys.png" class="coins"/>
+					<div class="gold" id="money-after">
+						<script type="text/javascript">
+						var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
+						document.write(user.currency);
+						</script>
+					</div>
+			</div>
+
+
+			<div id="etabs">
+				<ul class="tabs top-marg">
+					<li num="1" class="tab-img tab-curr" data-tab="tab-1">
+						<img src="imgs/top-tab.png" class="on img-curr"/>
+						<img src="imgs/top-tab-off.png" class="off off-first"/>
+					</li>
+					<li num="2" class="tab-img" data-tab="tab-2">
+						<img src="imgs/bottom-tab.png" class="on"/>
+						<img src="imgs/bottom-tab-off.png" class="off"/>
+					</li>
+					<li num="3" class="tab-img" data-tab="tab-3">
+						<img src="imgs/hat-tab.png" class="on"/>
+						<img src="imgs/hat-tab-off.png" class="off"/>
+					</li>
+					<li num="4" class="tab-img" data-tab="tab-4">
+						<img src="imgs/weapon-tab.png" class="on"/>
+						<img src="imgs/weapon-tab-off.png" class="off"/>
+					</li>
+					<li num="5" class="tab-img" data-tab="tab-5">
+						<img src="imgs/stylin-tab.png" class="on"/>
+						<img src="imgs/stylin-tab-off.png" class="off"/>
+					</li>
+					<li num="6" class="tab-img" data-tab="tab-6">
+						<img src="imgs/pet-tab.png" class="on"/>
+						<img src="imgs/pet-tab-off.png" class="off"/>
+					</li>
+				</ul>
+
+
+				<div class="items">
+
+				<!-- !!!!!!!!!!!!!!!!!!!!!!! TAB ONE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+					<div id="tab-1" class="grid grid-curr">
+						{{#each top-items}}
+						<div class="entries" id="{{name}}" alt="{{description}}">
+							<img src="{{img}}" class="thing"/>
+							<div class="price">
+								<img src="imgs/moneys.png" class="coin"/>
+								{{price}}
+							</div>
+							<div class="level">LV{{lvl}}</div>
+							<img src="imgs/check.png" class="owned"/>
+						</div>
+						{{/each}}
+					</div>
+
+				<!-- !!!!!!!!!!!!!!!!!!!!!!! TAB TWO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+					<div id="tab-2" class="grid">
+						{{#each bottom-items}}
+						<div class="entries" id="{{name}}" alt="{{description}}">
+							<img src="{{img}}" class="thing"/>
+							<div class="price">
+								<img src="imgs/moneys.png" class="coin"/>
+								{{price}}
+							</div>
+							<div class="level">LV{{lvl}}</div>
+							<img src="imgs/check.png" class="owned"/>
+						</div>
+						{{/each}}
+					</div>
+
+
+				<!-- !!!!!!!!!!!!!!!!!!!!!!! TAB THREE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+					<div id="tab-3" class="grid">
+						{{#each hat-items}}
+						<div class="entries" id="{{name}}" alt="{{description}}">
+							<img src="{{img}}"/>
+							<div class="price">
+								<img src="imgs/moneys.png" class="coin"/>
+								{{price}}
+							</div>
+							<div class="level">LV{{lvl}}</div>
+							<img src="imgs/check.png" class="owned"/>
+						</div>
+						{{/each}}
+					</div>
+
+				<!-- !!!!!!!!!!!!!!!!!!!!!!! TAB FOUR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+					<div id="tab-4" class="grid">
+						{{#each weapon-items}}
+						<div class="entries" id="{{name}}" alt="{{description}}">
+							<img src="{{img}}"/>
+							<div class="price">
+								<img src="imgs/moneys.png" class="coin"/>
+								{{price}}
+							</div>
+							<div class="level">LV{{lvl}}</div>
+							<img src="imgs/check.png" class="owned"/>
+						</div>
+						{{/each}}
+					</div>
+
+
+				<!-- !!!!!!!!!!!!!!!!!!!!!!! TAB FIVE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+					<div id="tab-5" class="grid">
+						{{#each style-items}}
+						<div class="entries" id="{{name}}" alt="{{description}}">
+							<img src="{{img}}"/>
+							<div class="price">
+								<img src="imgs/moneys.png" class="coin"/>
+								{{price}}
+							</div>
+							<div class="level">LV{{lvl}}</div>
+							<img src="imgs/check.png" class="owned"/>
+						</div>
+						{{/each}}
+					</div>
+
+
+					<!-- !!!!!!!!!!!!!!!!!!!!!!! TAB SIX !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+					<div id="tab-6" class="grid">
+						{{#each pet-items}}
+						<div class="entries" id="{{name}}" alt="{{description}}">
+							<img src="{{img}}"/>
+							<div class="price">
+								<img src="imgs/moneys.png" class="coin"/>
+								{{price}}
+							</div>
+							<div class="level">LV{{lvl}}</div>
+							<img src="imgs/check.png" class="owned"/>
+						</div>
+						{{/each}}
+					</div>
+
+				</div>	
+			</div>
+
+			<div id="buttons">
+				<img src="imgs/reset.png" id="reset"/><button type="button" id="checkout">checkout</button>
+			</div>
+
+		</div>
+
+		<div id="navbar">
+			<div id="stats">
+				&nbsp;
+			</div>
+
+			{{> menu}}
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+</body>
+</html>

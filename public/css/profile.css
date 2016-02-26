@@ -1,0 +1,59 @@
+#self {
+	width: 350px;
+	height: 180px;
+	text-align: left;
+	clear: both;
+}
+
+#avvie {
+	height: 180px;
+	width: 180px;
+	float: left;
+}
+
+#self img {
+	margin: 5px;
+	height: 170px;
+	width: 170px;
+	position: absolute;
+}
+
+#self .desc {
+	width: 170px;
+	height: 180px;
+	float: left;
+}
+
+#self .desc .text {
+	margin: 10px;
+	text-align: center;
+}
+
+#self .desc .text h1 {
+	font-family: 'Patua One', cursive;
+	font-size: 20px;
+	border-bottom: solid 3px #222222;
+	font-weight: normal;
+	margin: 0px;
+	margin-top: 20px;
+	padding: 0px;
+	height: 25px;
+}
+
+#self .desc .text p {
+	text-align: justify;
+	font-family: 'Open Sans',sans-serif;
+	font-size: 14px;
+	margin: 0px;
+	margin-top: 10px;
+	padding: 10px 15px 10px 15px;
+	background-color: #ffffff;
+	height: 97px;
+	line-height: 12px;
+}
+
+#self .desc .text h1 img {
+	height: 15px;
+	width: 15px;
+	float: right;
+}

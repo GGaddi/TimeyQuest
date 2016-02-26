@@ -1,0 +1,41 @@
+<!doctype HTML>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="/css/adventure.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="/js/timer.js"></script>
+	{{> imports}}
+
+	<script>
+		$(function(){
+			$('.timer').startTimer();
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<div id="wrap">
+		<div id="content">
+			<div id="timer">
+				<div class="clock">
+					<script type="text/javascript">
+						var seconds = localStorage.getItem("time");
+						var htmlString = "<div class='timer' data-seconds-left=" + seconds + "></div>";
+						document.write(htmlString);
+					</script>
+				</div>
+				<div class="progress">&nbsp;</div>
+			</div>
+			<img src="../imgs/avatar-mini.png"/>
+			<button type="button" name="end" onclick="location.href = 'home';">end adventure</button>
+		</div>
+
+		{{> stats}}
+	</div>
+
+</body>

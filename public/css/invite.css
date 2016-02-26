@@ -1,0 +1,42 @@
+body{
+	background-image:url("");
+	background-color: #dddddd;
+}
+
+.invlist {
+	width: 312px;
+	height: 350px;
+	overflow: hidden;
+	border: #ffffff 2px solid;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.invlist img {
+	height: 100px;
+	width: 100px;
+	margin: 2px;
+	float: left;
+}
+
+.curr {
+	margin: 1px!important;
+	border: #ffffff 1px solid;
+	background-color: #ffffff;
+}
+
+button[type="button"] {
+	margin: auto;
+	width: 316px;
+	height: 55px;
+	border: 0px;
+	margin-top: 5px;
+	background-color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+	letter-spacing: -1px;
+	line-height: 50px;
+	color: #000000;
+	border-bottom: solid 4px #aaaaaa;
+	margin-top:  15px;
+}

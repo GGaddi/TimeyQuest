@@ -1,0 +1,51 @@
+body {
+	background-image:url("");
+	background-color: #dddddd;
+}
+
+#timer {
+	margin-top: 50px;
+	margin-bottom: 265px;
+}
+
+.clock {
+	height: 100px;
+	width: 250px;
+	margin: auto;
+	font-family: 'Open Sans', sans-serif;
+	color: #000000;
+	font-size: 60px;
+	line-height: 100px;
+}
+
+
+.seconds,.minutes,.hours {
+	height: 100px;
+	font-family: 'Open Sans', sans-serif;
+	color: #000000;
+	font-size: 60px;
+	line-height: 100px;
+	float: left;
+}
+
+.progress {
+	height: 10px;
+	background-color: #cccccc;
+	border: solid 1px #ffffff;
+	width: 348px;
+}
+
+button[type="button"] {
+	width: 350px;
+	height: 55px;
+	border: 0px;
+	margin-top: 5px;
+	background-color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 50px;
+	color: #000000;
+	border-bottom: solid 4px #aaaaaa;
+}

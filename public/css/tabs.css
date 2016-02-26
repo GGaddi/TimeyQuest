@@ -1,0 +1,61 @@
+#etabs {
+	clear: both;
+	width: 350px;
+	margin-top: 5px;
+	text-align: center;
+}
+
+.on {
+	display: none;
+	position: relative;
+	z-index: 3;
+}
+
+.img-curr {
+	display: block;
+}
+
+.off {
+	display: block;
+	position: absolute;
+	z-index: 2px;
+}
+
+.off-first {
+	margin-top: -55px;
+}
+
+.tab-img {
+	list-style: none;
+	float: left;
+	height: 55px;
+	width: 55px;
+	overflow: hidden;
+}
+
+.tab-img img {
+	height: 55px;
+	width: 55px;
+}
+
+#etabs .tabs {
+	height: 57px;
+	width: 345px;
+	padding: 0px;
+	clear: both;
+	margin: 0px 0px -2px 9px;
+	position: relative;
+	z-index: 1;
+}
+
+.tab-curr {
+}
+
+.grid-curr {
+	display: block!important;
+}
+
+
+.item-curr {
+	background-color: #eeeeee;
+}

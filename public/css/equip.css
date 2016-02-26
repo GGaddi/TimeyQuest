@@ -1,0 +1,86 @@
+body {
+	background-image:url("");
+	background-color: #dddddd;
+}
+
+
+#etabs .items {
+	margin: 0px 0px 0px 9px;
+	background-color: #ffffff;
+	border: solid 2px #ffffff;
+	border-left: solid 1px #ffffff;
+	height: 164px;
+	overflow: hidden;
+	width: 327px;
+}
+
+#etabs .items .grid {
+	line-height: 0px;
+	text-align: left;
+	height: 164px;
+	width: 345px;
+	overflow: auto;
+	display: none;
+}
+
+.entries {
+	height: 80px;
+	width: 80px;
+	margin: 1px;
+}
+
+#etabs .items .grid img {
+	height: 80px;
+	width: 80px;
+}
+
+.left-marg {
+	margin-left: 9px!important;
+}
+
+#buttons {
+	margin: auto;
+	width: 332px;
+	text-align: center;
+	margin-top: 5px;
+	position: relative;
+	z-index: 2;
+}
+
+
+#buttons button[type="button"] {
+	height: 35px;
+	width: 293px;
+	border: 0px;
+	background-color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 22px;
+	letter-spacing: -2px;
+	color: #222222;
+	float: left;
+	margin-right: 4px;
+	border-bottom: solid 3px #aaaaaa;
+}
+
+.reset {
+	width: 35px;
+	height: 35px;
+	float: left;
+}
+
+
+#base {
+	position: absolute;
+	z-index: 1;
+}
+
+#top { z-index: 3; }
+#bottom { z-index: 2; }
+#hat { z-index: 5; }
+#weapon { z-index: 4; }
+#style { z-index: 6; }
+#pet { z-index: 7; }
+
+.clothes {
+	position: absolute;
+}

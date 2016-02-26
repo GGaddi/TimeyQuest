@@ -1,0 +1,144 @@
+<!doctype HTML>
+<html>
+<head>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="/css/friends.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="/js/friends.js"></script>
+	<script src="/js/help.js"></script>
+	{{> imports}}
+	
+</head>
+
+<body>
+	{{> friends-notif}}
+	{{> help-friends}}
+	<div id="wrap">
+		<div id="content">
+			{{> topbar-front}}
+				friends
+			{{> topbar-back}}
+
+			<div id="etabs">
+				<ul class="tabs">
+					<li num="1" class="tabe tabe-curr" data-tab="tab-1">friends</li>
+					<li num="2" class="tabe" data-tab="tab-2">search</li>
+					<li num="3" class="tabe" data-tab="tab-3">requests</li>
+				</ul>
+			</div>
+
+			<div class="flist flist-curr" id="tab-1">
+				<form id="flist">
+					<input type="text" name="search" placeholder="search" />
+						<a href="#"><img src="/imgs/search.png" class="search-go"></a>					
+				</form>
+				
+				<div id="info">
+					<div id="info-in">
+						{{#each friends}}
+						<div class="entry">
+							<img src="{{avatar}}"/>
+							<div class="level">{{level}}</div>
+							<div class="name">{{username}}</div>
+							<div class="desc">{{description}}</div>
+							<div id="action">
+								<div class="prof lookup">
+									<img src="/imgs/friends-viewprofile.png"/>
+									<div class="prof-bg">&nbsp;</div>
+								</div>
+							</div>
+						</div>
+						{{/each}}
+						</div>
+					</div>
+				</div>
+
+
+				<div class="flist" id="tab-2">
+				<form id="flist">
+					<input type="text" name="search" placeholder="search" />
+						<a href="#"><img src="/imgs/search.png" class="search-go"></a>
+				</form>
+				
+				<div id="info">
+					<div id="info-in">
+						{{#each friends}}
+						<div class="entry">
+							<img src="{{avatar}}"/>
+							<div class="level">{{level}}</div>
+							<div class="name">{{username}}</div>
+							<div class="desc">{{description}}</div>
+							<div class="prof adding">
+								<img src="/imgs/friends-add.png"/>
+								<div class="prof-bg">&nbsp;</div>
+							</div>
+						</div>
+						{{/each}}
+						</div>
+					</div>
+				</div>
+
+
+				<div class="flist" id="tab-3">
+				
+				<div id="info" class="info-remove">
+					<div id="info-in" class="info-remove">
+						{{#each friends}}
+						<div class="entry">
+							<img src="{{avatar}}"/>
+							<div class="level">{{level}}</div>
+							<div class="name">{{username}}</div>
+							<div class="desc">{{description}}</div>
+							<div class="prof deleting">
+								<img src="/imgs/friends-delete.png"/>
+								<div class="prof-bg">&nbsp;</div>
+							</div>
+						</div>
+						{{/each}}
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+		
+
+		<div id="navbar">
+			<div id="stats">
+				&nbsp;
+			</div>
+
+			{{> menu}}
+		</div>
+	</div>
+
+</body>
+</html>
+
+
+<!--	
+						<div class="entry">
+							<img src="https://placehold.it/100x100"/>
+							<div class="level">20</div>
+							<div class="name">namehere</div>
+							<div class="desc">lorem ipsum dolor sit amet idk man help</div>
+							<div class="prof">&nbsp;</div>
+						</div>
+						<div class="entry">
+							<img src="https://placehold.it/100x100"/>
+							<div class="level">20</div>
+							<div class="name">namehere</div>
+							<div class="desc">lorem ipsum dolor sit amet idk man help</div>
+							<div class="prof">&nbsp;</div>
+						</div>
+						<div class="entry">
+							<img src="https://placehold.it/100x100"/>
+							<div class="level">20</div>
+							<div class="name">namehere</div>
+							<div class="desc">lorem ipsum dolor sit amet idk man help</div>
+							<div class="prof">&nbsp;</div>
+						</div> -->

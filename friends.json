@@ -1,0 +1,33 @@
+{
+	"friends": [
+		{
+			"username": "Jasmine",
+			"level": "25",	
+			"avatar": "/imgs/avatar-100-blank.png",
+			"description": "We don't need to save - Gabriel",
+			"id": "1"
+		},
+		{
+			"username": "Alicia",
+			"level": "55",	
+			"avatar": "/imgs/avatar-100-blank.png",
+			"description": "DEATH",
+			"id": "2"	
+		},
+		{
+			"username": "Michelle",
+			"level": "52",	
+			"avatar": "/imgs/avatar-100-blank.png",
+			"description": "Hi!!!! o/",
+			"id": "3"
+		},
+		{
+			"username": "Joshua",
+			"level": "22",
+			"avatar": "/imgs/avatar-100-blank.png",
+			"description": "WHEEEEEEEEEEEEEEEEEEEEEE",
+			"id": "4"		
+		}
+
+	]
+}

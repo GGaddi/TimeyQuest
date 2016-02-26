@@ -1,0 +1,184 @@
+body {
+	background-image:url("");
+	background-color: #dddddd;
+}
+
+#info {
+	width: 350px;
+}
+
+#info h1 {
+	font-family: 'Patua One', cursive;
+	font-size: 30px;
+	font-weight: normal;
+	width: 124px;
+	float: left;
+	margin-top: 8px;
+	height: 30px;
+}
+
+.tabs img {
+	
+}
+
+#nameIn {
+	font-family: 'Patua One', cursive;
+	font-size: 12px;
+	width: 120px;
+	height: 20px;
+	display: block;
+	float: left;
+	border: 0px;
+	padding-left: 4px;
+}
+
+
+#info .bar {
+	background-color: #000000;
+	height: 5px;
+	line-height: 5px;
+	width: 113px;
+	float: left;
+	margin-top: 25px;
+}
+
+#info .lvl {
+	height: 25px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#info .exp {
+	clear: both;
+	margin-left: 10px;
+	width: 100px;
+	line-height: 12px;
+	font-family: 'Patua One', cursive;
+	font-size: 16px;
+	float: left;
+	text-align: left;
+}
+
+#info .exp-txt {
+	clear: both;
+	text-align: right;
+	line-height: 13px;
+	font-family: 'Patua One', cursive;
+	font-size: 13px;
+	margin-right: 12px;
+	padding-top: 2px;
+	padding-bottom: 10px;
+}
+
+#info .exp-bar {
+	margin-left: 5px;
+	height: 10px;
+	background-color: #cccccc;
+	border: solid 1px #ffffff;
+	width: 225px;
+	float: left;
+}
+
+#info .exp-progress {
+	height: 10px;
+	background-color: #222222;
+}
+
+#info .gold {
+	margin-left: 5px;
+	line-height: 14px;
+	display: inline-block;
+	font-family: 'Patua One', cursive;
+	font-size: 16px;
+	text-align: left;
+	float: left;
+	margin-right: 12px;
+	margin-top: -2px;
+}
+
+.money {
+	width: 225px;
+	float: left;
+	height: 16px;
+	margin-top: -5px;
+}
+
+.mons {
+	width: 100px !important;
+	margin-top: -1px;
+}
+
+.coin {
+	height: 12px;
+	width: 12px;
+	float: left;
+	margin-left: 5px;
+}
+
+.tabs {
+	clear: both;
+	height: 50px;
+	margin: auto;
+	position: relative;
+	z-index: 3;
+	margin-top: 12px;
+	margin-bottom: 0px;
+	overflow: hidden;
+}
+
+.tabs img {
+	height: 55px;
+	width: 55px;
+}
+
+.priv {
+	clear: both;	
+	font-family: 'Patua One', cursive;
+	float: left;
+	margin-top: 12px;
+	margin-bottom: 8px;
+	font-weight: normal;
+	margin-left: 5px;
+}
+
+button[type="button"] {
+	clear: both;
+	height: 35px;
+	width: 345px;
+	border: 0px;
+	background-color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	border-bottom: solid 3px #aaaaaa;
+	font-size: 22px;
+	letter-spacing: -2px;
+	color: #222222;
+	margin-top: 12px;
+	margin-left: 5px;
+}
+
+input[type="submit"] {
+	clear: both;
+	height: 35px;
+	width: 345px;
+	border: 0px;
+	background-color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	border-bottom: solid 3px #aaaaaa;
+	font-size: 22px;
+	letter-spacing: -2px;
+	color: #222222;
+	margin-top: 12px;
+	margin-left: 5px;
+}
+
+#self .desc .text #msgIn {
+	max-width: 95%;
+	max-height: 100%;
+	font-family: 'Open Sans',sans-serif;
+	font-size: 14px;
+	margin: 0px;
+	margin-top: 10px;
+	background-color: #ffffff;
+	height: 97px;
+	line-height: 12px;
+}

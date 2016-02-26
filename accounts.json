@@ -1,0 +1,45 @@
+{
+	"accounts": [
+		{
+			"id": "1",
+			"username": "Gabriel",
+			"charName":	"Brixgale",
+			"password": "Gaddi",
+			"email": "pinoyboy@gmail.com",
+			"level": 255,
+			"currency": "999999",		
+			"message": "i want sushi"	
+		},
+		{
+			"id": "2",
+			"username": "Alicia",
+			"charName":	"feasts",
+			"password": "Ning",
+			"email": "Alicia@gmail.com",
+			"level": 999,
+			"currency": "666666",		
+			"message": "i want death"
+		},
+		{
+			"id": "3",
+			"username": "Michelle",
+			"charName":	"Micheke",
+			"password": "Nguyen",
+			"email": "Michelle@gmail.com",	
+			"level": 60,
+			"currency": "444444",
+			"message": "i want koyasu out of my life"		
+		},
+		{
+			"id": "4",
+			"username": "Jasmine",
+			"charName":	"Minnie",
+			"password": "Lin",
+			"email": "Jasmine@gmail.com",
+			"level": 1,	
+			"currency": "777777",
+			"message": "home along on a fridey night? juts remember... the Z man."	
+		}
+
+	]
+}

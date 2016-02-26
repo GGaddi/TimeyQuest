@@ -1,0 +1,51 @@
+<!doctype HTML>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="/css/home.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="/js/help.js"></script>
+
+	{{> imports}}
+
+</head>
+<body>
+
+	{{> help-home}}
+
+	<div id="wrap">
+		<div id="content">
+			{{> topbar-front}}
+				home
+			{{> topbar-back}}
+
+			<div class="name">
+				<script type="text/javascript">
+					var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
+					document.write(user.charName);
+				</script>
+			</div>
+			<div class="image">
+				<img src="../imgs/avatar-maxi.png"/> 
+				<div class="lvl">
+					<script type="text/javascript">
+					var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
+					document.write("lv." + user.level);
+					</script>
+				</div>
+			</div>
+
+			<h1>go on an adventure?</h1>
+
+			<button type="button" name="solo" onclick="location.href = 'quest';">solo</button>
+			<button type="button" name="group" onclick="location.href = 'group';">group</button>
+		</div>
+
+		{{> stats}}
+
+		{{> menu}}
+	</div>
+
+</body>

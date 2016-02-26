@@ -1,0 +1,26 @@
+[
+	{
+		"name": "red shirt",
+		"id": "001r",
+		"lvl": 1,
+		"price": 0,
+		"img": "http://placehold.it/80x80",
+		"description": "the perfect shirt for a new adventurer with no money."			
+	},
+	{
+		"name": "blue shirt",
+		"id": "001b",
+		"lvl": 1,
+		"price": 0,
+		"img": "http://placehold.it/80x80",
+		"description": "the perfect shirt for a new adventurer with no money."			
+	},
+	{
+		"name": "green shirt",
+		"id": "001g",
+		"lvl": 1,
+		"price": 0,
+		"img": "http://placehold.it/80x80",
+		"description": "the perfect shirt for a new adventurer with no money."			
+	}
+]

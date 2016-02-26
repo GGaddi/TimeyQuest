@@ -1,0 +1,40 @@
+<!doctype HTML>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<link rel="stylesheet" type="text/css" href="/css/join.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="/js/help.js"></script>
+	<script src="/js/quest.js"></script>
+	{{> imports}}
+</head>
+
+<body>
+
+	{{> help-group}}
+
+	<div id="wrap">
+		<div id="content">
+			{{> topbar-front}}
+				join
+			{{> topbar-back}}
+
+			<h1>whose party will you join?</h1>
+			<p><b>Strange Adventurer</b>. Breaks every <b>45</b> minutes, and a boss every <b><span id="boss-hr">1</span></b> hour and <b><span id="boss-min">30</span></b> minutes.</p>
+
+			<p><b>Happy Adventurer</b>. No breaks, and a boss every <b>1</b> hour and <b>30</b> minutes.</p>
+
+			<button type="button" id="start">join adventure</button>
+			
+		
+		</div>
+
+			{{> stats}}
+
+			{{> menu}}
+	</div>
+
+</body>

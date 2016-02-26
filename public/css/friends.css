@@ -1,0 +1,233 @@
+body {
+	background-image:url("");
+	background-color: #dddddd;
+}
+
+#etabs {
+	clear: both;
+	width: 350px;
+	margin-top: -25px;
+	text-align: center;
+	list-style: none;
+	margin-left: -40px;
+}
+
+.tabs {
+	clear: both;
+	margin-top: 10px;
+	margin-left: 6px;
+	width: 345px;
+}
+
+.tabe {
+	float: left;
+	border-bottom: 0px;
+	height: 50px;
+	width: 114px;
+	color: #999999;
+	list-style: none;
+	font-family: 'Patua One',serif;
+	font-size: 25px;
+	line-height: 70px;
+}
+
+.tabe-curr {
+	color: #000000;
+}
+
+.flist {
+	clear: both;
+	border: solid 2px #ffffff;
+	display: inline-block;
+	width: 346px;
+	overflow: hidden;
+	display: none;
+}
+
+.flist-curr {
+	display: block;
+}
+
+.flist img {
+	float: left;
+	margin-top: 5px;
+}
+
+#flist input[type="text"] {
+	width: 278px;
+	height: 13px;
+	padding: 10px;
+	border: 0px;
+	margin: 5px;
+	border-bottom: solid 3px #cccccc;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	color: #444444;
+	transition: border 0.3s;
+	-moz-transition: border 0.3s;
+	-webkit-transition: border 0.3s;
+	-o-transition: border 0.3s;
+	outline: none;
+	float: left;
+}
+
+#flist input[type="text"]:focus, #flist input[type="text"].focus {
+	outline: none;
+	border-bottom: solid 3px #aaaaaa;
+	transition: border 0.3s;
+	-moz-transition: border 0.3s;
+	-webkit-transition: border 0.3s;
+	-o-transition: border 0.3s;
+}
+
+#info {
+	width: 338px;
+	margin: 5px;
+	height: 325px;
+	overflow: hidden;
+}
+
+#info-in {
+	height: 325px;
+	width: 355px;
+	overflow: auto;
+}
+
+.info-remove {
+	height: 366px!important;
+}
+
+.entry {
+	clear: both;
+	height: 100px;
+	text-align: left;
+}
+
+#info img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	position: relative;
+	z-index: 1;
+	height: 100px;
+	width: 100px;
+}
+
+#info .level {
+	font-family: 'Patua One', cursive;
+	font-size: 15px;
+	float: left;
+	margin-top: 85px;
+	margin-left: -100px;
+	position: relative;
+	width: 85px;
+	text-align: right;
+	z-index: 2;
+}
+
+
+#info .name {
+	font-family: 'Patua One', cursive;
+	font-size: 20px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+	height: 20px;
+	width: 180px;
+}
+
+#info .desc {
+	width: 175px;
+	float: left;
+	overflow: hidden;
+	margin-top: 5px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	height: 69px;
+	padding: 0px 5px 5px 5px;
+	letter-spacing: -1px;
+	background-color: #eeeeee;
+}
+
+#info .prof {
+	height: 110px;
+	float: right;
+	width: 35px;
+	background-color: #cccccc;
+	margin-top: -30px;
+	text-align: center;
+}
+
+#info .prof img {
+	height: 110px;
+	width: 35px;
+	position: relative;
+	z-index: 1;
+}
+
+#info .prof .prof-bg {
+	height: 110px;
+	width: 35px;
+	background-color: #ffffff;
+	position: relative;
+	z-index: 2;
+	opacity: 0;
+	transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.prof-bg:hover {
+	opacity: .3!important;
+	transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.winpop {
+	width: 300px;
+    height: 100px;
+    background: #eeeeee;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 200px;
+    z-index: 4;
+    padding: 25px;
+    text-align: justify;
+    overflow: hidden;
+    border: solid 2px #ffffff;
+}
+
+.close {
+	float: right;
+	height: 20px;
+	width: 20px;
+	margin-top: -10px;
+	margin-right: -10px;
+	line-height: 20px;
+	font-family: 'Patua One',serif;
+	font-size: 25px;
+}
+
+.winpop h1 {
+  font-family: 'Patua One',cursive;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+.winpop p {
+  font-family: 'Open Sans',sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: normal;
+}
