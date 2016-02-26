@@ -103,7 +103,7 @@ exports.view = function(req, res){
 				'id': 'h-001r',
 				'lvl': 3,
 				'price': 50,
-				'img': 'http://placehold.it/105x105',
+				'img': 'imgs/items/h-001r.png',
 				'description': 'it keeps the hair out of your eyes... supposedly.'			
 			},
 			{
@@ -111,7 +111,7 @@ exports.view = function(req, res){
 				'id': 'h-001bl',
 				'lvl': 3,
 				'price': 50,
-				'img': 'http://placehold.it/105x105',
+				'img': 'imgs/items/h-001bl.png',
 				'description': 'it keeps the hair out of your eyes... supposedly.'			
 			},
 			{
@@ -119,7 +119,7 @@ exports.view = function(req, res){
 				'id': 'h-001g',
 				'lvl': 3,
 				'price': 50,
-				'img': 'http://placehold.it/105x105',
+				'img': 'imgs/items/h-001g.png',
 				'description': 'it keeps the hair out of your eyes... supposedly.'			
 			},
 			{
@@ -127,7 +127,7 @@ exports.view = function(req, res){
 				'id': 'h-001w',
 				'lvl': 3,
 				'price': 55,
-				'img': 'http://placehold.it/105x105',
+				'img': 'imgs/items/h-001w.png',
 				'description': 'it keeps the hair out of your eyes... supposedly.'
 			},
 			{
@@ -135,7 +135,7 @@ exports.view = function(req, res){
 				'id': 'h-001bk',
 				'lvl': 3,
 				'price': 55,
-				'img': 'http://placehold.it/105x105',
+				'img': 'imgs/items/h-001bk.png',
 				'description': 'it keeps the hair out of your eyes... supposedly.'
 			}
 		],
@@ -157,7 +157,7 @@ exports.view = function(req, res){
 				'id': 's-001br',
 				'lvl': 1,
 				'price': 0,
-				'img': 'http://placehold.it/105x105',
+				'img': 'imgs/items/s-001br.png',
 				'description': 'nothing wrong with keeping it simple.'
 			},
 			{
@@ -165,7 +165,7 @@ exports.view = function(req, res){
 				'id': 's-001bk',
 				'lvl': 1,
 				'price': 0,
-				'img': 'http://placehold.it/105x105',
+				'img': 'imgs/items/s-001bk.png',
 				'description': 'nothing wrong with keeping it simple.'
 			},
 			{
@@ -173,7 +173,7 @@ exports.view = function(req, res){
 				'id': 's-001bd',
 				'lvl': 1,
 				'price': 0,
-				'img': 'http://placehold.it/105x105',
+				'img': 'imgs/items/s-001bd.png',
 				'description': 'nothing wrong with keeping it simple.'
 			},
 			{
@@ -181,7 +181,7 @@ exports.view = function(req, res){
 				'id': 's-001r',
 				'lvl': 1,
 				'price': 0,
-				'img': 'http://placehold.it/105x105',
+				'img': 'imgs/items/s-001r.png',
 				'description': 'nothing wrong with keeping it simple.'
 			}
 		],

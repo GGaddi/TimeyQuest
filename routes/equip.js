@@ -32,7 +32,7 @@ exports.view = function(req, res){
 				'id': 'h-001r',
 				'lvl': 3,
 				'price': 50,
-				'img': 'http://placehold.it/80x80',
+				'img': 'imgs/items/h-001r.png',
 				'description': 'it keeps the hair out of your eyes... supposedly.'			
 			}
 		],
@@ -50,11 +50,11 @@ exports.view = function(req, res){
 
 		'style-items': [
 			{
-				'name': 'new adventurer (brown)',
-				'id': 's-001br',
+				'name': 'new adventurer (red)',
+				'id': 's-001r',
 				'lvl': 1,
 				'price': 0,
-				'img': 'http://placehold.it/80x80',
+				'img': 'imgs/items/s-001r.png',
 				'description': 'nothing wrong with keeping it simple.'
 			}
 		],

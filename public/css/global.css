@@ -134,7 +134,7 @@
     left: 0;
     margin: auto;
     margin-top: 90px;
-    z-index: 4;
+    z-index: 100;
     padding: 25px;
     text-align: justify;
     overflow: hidden;

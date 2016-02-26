@@ -67,8 +67,8 @@
 #top { z-index: 3; }
 #bottom { z-index: 2; }
 #hat { z-index: 5; }
-#weapon { z-index: 4; }
-#style { z-index: 6; }
+#weapon { z-index: 6; }
+#style { z-index: 4; }
 #pet { z-index: 7; }
 
 .clothes {
