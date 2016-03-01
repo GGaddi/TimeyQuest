@@ -125,7 +125,7 @@
 
 .popup {
     width: 300px;
-    height: 375px;
+    height: 400px;
     background: #eeeeee;
     position: absolute;
     top: 0;
@@ -133,7 +133,7 @@
     bottom: 0;
     left: 0;
     margin: auto;
-    margin-top: 90px;
+    margin-top: 65px;
     z-index: 100;
     padding: 25px;
     text-align: justify;
@@ -201,14 +201,15 @@
 }
 
 .top-menu-help {
-	float: left;
-	margin-right: 150px;
+	position: absolute;
 	height: 20px;
 	line-height: 15px;
 	font-family: 'Patua One', cursive;
-	font-size: 15px;
+	font-size: 13px;
 	text-decoration: none;
 	color: #555555;
+	margin-top: -5px;
+	z-index: 25;
 }
 
 .top-menu a {
