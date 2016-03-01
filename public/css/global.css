@@ -199,6 +199,16 @@
 	text-decoration: none;
 	color: #555555;
 }
+.top-menu-help {
+	float: left;
+	margin-right: 150px;
+	height: 20px;
+	line-height: 15px;
+	font-family: 'Patua One', cursive;
+	font-size: 15px;
+	text-decoration: none;
+	color: #555555;
+}
 
 .top-menu a {
 	text-decoration: none;
