@@ -6,6 +6,10 @@ async: true;
 
 $(document).ready(function(){
 	initializePage();	
+	console.log(user.privacy + "????");
+	if( database.privacy == 'false') {
+		console.log("DERLP");
+	}
 });
 
 function initializePage() {
@@ -83,6 +87,15 @@ function saveChanges (e) {
 		localStorage.setItem(localStorage.getItem("user"), JSON.stringify(user));
 		database.update({
 			"message": document.getElementById("msgIn").value
+		});
+	}
+	if ( $('input[type=checkbox]:checked') )
+		database.update({
+			"privacy":true
+		});
+	else {
+		database.update({
+			"privacy":false
 		});
 	}
 	/*var newNameWhole = document.getElementById("namefield").innerHTML;
