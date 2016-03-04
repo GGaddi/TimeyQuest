@@ -148,17 +148,50 @@ function handleLogin(result){
 			location.href = '/';
 		}
 		else{
+			var count = 0;
+			dataRef.once("value", function(snapshot) {
+				snapshot.forEach(function(data) {
+					//console.log(data.key());
+					if(data.val().username == username) {
+						location.href = '/';
+					}
+					else{
+						count++;
+					}
+  				});
+			}, 		function (errorObject) {
+  				console.log("The read failed: " + errorObject.code);
+			});
 			jsonObj = {
-				"id": result['accounts'].length+1, 
+				"id": count+1, 
 				"username": username,
 				"charName": username, 
 				"password": password,
 				"email": email,
 				"level": 1,
 				"currency": 1000,
-				"message": "enter a personal message here..."
+				"message": "enter a personal message here...",
+				"item-head": 0,
+				"item-top": 0,
+				"item-bottom": 0,
+				"item-hat": 0,
+				"item-weapon": 0,
+				"item-pet": 0
 			};
 			dataRef.push(jsonObj);
+			dataRef.once("value", function(snapshot) {
+				snapshot.forEach(function(data) {
+					//console.log(data.key());
+					if(data.val().username == username && data.val().password == password) {
+						allow = 1;
+						//console.log("I am working");
+						localStorage.setItem("key", data.key());
+						return;
+					}
+  				});
+  			}, 		function (errorObject) {
+  				console.log("The read failed: " + errorObject.code);
+			});
 			/*var check = dataRef.set('User ' + "hi" + ' says ' + "bye" + " I am slow");
 			dataRef.set('User ' + "hi" + ' says ' + "bye" + " I am slow2");
 			database.set('User ' + "hi" + ' says ' + "bye" + " I am slow3");
@@ -171,7 +204,7 @@ function handleLogin(result){
 
     		jsonObj.push(item); */
     		//result["accounts"].push(jsonObj);
-    		console.log(result['accounts'].length);
+    		//console.log(result['accounts'].length);
 
     		/*$.getJSON('./accounts.json', function(data) {
 				console.log(data);
@@ -181,8 +214,8 @@ function handleLogin(result){
 			localStorage.setItem("user", username);
 			localStorage.setItem(username, jsonString);
 			//console.log("I am running");
-			console.log(jsonString);
-			console.log(jsonObj);
+			//console.log(jsonString);
+			//console.log(jsonObj);
 			location.href = 'home';
 		}
 	}

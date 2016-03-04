@@ -1,5 +1,8 @@
 var nameChange;
 var messageChange;
+var key = localStorage.getItem("key");
+var database = new Firebase('https://vivid-heat-9192.firebaseio.com/accounts/' + key);
+async: true;
 
 $(document).ready(function(){
 	initializePage();
@@ -57,11 +60,18 @@ function saveChanges (e) {
 		var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
 		user.charName = localStorage.getItem("newName");
 		localStorage.setItem(localStorage.getItem("user"), JSON.stringify(user));
+		database.update({
+			"charName": localStorage.getItem("newName")
+		});
+		
 	}
 	if (messageChange == 1){
 		var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
 		user.message = document.getElementById("msgIn").value;//localStorage.getItem("newMessage");
 		localStorage.setItem(localStorage.getItem("user"), JSON.stringify(user));
+		database.update({
+			"message": document.getElementById("msgIn").value
+		});
 	}
 	/*var newNameWhole = document.getElementById("namefield").innerHTML;
 	var newName = newNameWhole.replace('<a href="#"><img src="http://placehold.it/15x15"/ id="namebtn"></a>', ''); */

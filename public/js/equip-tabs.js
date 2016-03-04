@@ -1,3 +1,7 @@
+var key = localStorage.getItem("key");
+var database = new Firebase('https://vivid-heat-9192.firebaseio.com/accounts/' + key);
+async: true;
+
 $(document).ready(function(){
 	initializePage();
 });
