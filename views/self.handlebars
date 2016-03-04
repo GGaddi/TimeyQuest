@@ -10,11 +10,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="/js/self.js"></script>
 	<script src="/js/help.js"></script>
+	<script src="/js/save-changes.js"></script>
 		{{> imports}}
 </head>
 
 <body>
 
+	{{> save-changes}}
 	{{> help-self}}
 
 	<div id="wrap">
@@ -90,7 +92,7 @@
 						I don't want to be seen by others.
 					</input>
 				</div>
-					<button type="button" name="save" id = "save">save changes</button>
+					<button type="button" name="save" id = "save" class="save-changes">save changes</button>
 				
 			</div>
 

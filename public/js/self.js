@@ -1,8 +1,9 @@
 var nameChange;
 var messageChange;
+var open;
 
 $(document).ready(function(){
-	initializePage();
+	initializePage();	
 });
 
 function initializePage() {
@@ -10,8 +11,20 @@ function initializePage() {
 	$("#namebtnconfirm").click(confirmName);
 	$("#usermessage").click(editMsg);
 	$("#save").click(saveChanges);
+	$(".tabs img").click(displayEquipment);
+
+	$("body").on("click",".close", function() {
+		$('.equip-item').hide();
+	});
+
 	nameChange = 0;
 	messageChange = 0;
+}
+
+function displayEquipment(e) {
+	var type = $(this).attr('name');	
+	var name = $(this).attr('title');	
+	$('body').append('<div class="equip-item"><img src="imgs/items/t-001r.png"/><div class="item-name">'+name+'</div><div class="close">x</span></div>');
 }
 
 function editName (e) {
