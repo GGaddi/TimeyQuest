@@ -1,0 +1,136 @@
+<div id="boss-prompt">
+	<h1>an enemy has appeared! <br/> do you want to fight?</h1>
+	<div class="boss-choice" id="boss-yes">yes</div> <div class="boss-choice" id="boss-no">no</div>
+</div>
+
+<div id="boss-fight">
+
+	<div class="battle">
+		<h1>what will you do?</h1>
+
+		<div class="battle-attack battle-actions">attack</div>
+		<div class="battle-flee battle-actions">flee</div>
+	</div>
+
+	<img src="../imgs/avatar-mini.png" class="battle-you"/>
+	<img src="http://placehold.it/150x150" class="battle-boss">
+	<div class="button">collect reward</div>
+
+</div>
+
+<style type="text/css">
+#boss-prompt {
+	position: absolute;
+	width: 346px;
+	height: 140px;
+	top: 0;
+	margin: auto;	
+	margin-top: 210px;
+	left: 0;
+	right: 0;
+	background-color: #eeeeee;
+	border: 2px solid #ffffff;
+	text-align: center;
+	z-index: 80;
+}
+
+#boss-prompt h1 {
+	margin: 10px 0px 15px 0px;
+	padding: 0px;
+	font-family: 'Patua One', cursive;
+	font-weight: normal;
+	font-size: 28px;
+}
+
+.boss-choice {
+	margin-left: 9px;
+	float: left;
+	width: 160px;
+	height: 35px;
+	background-color: #ffffff;
+	line-hight: 35px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	border-bottom: 3px solid #aaaaaa;
+}
+
+#boss-fight {
+	position: absolute;
+	height: 389px;
+	width: 350px;
+	top: 0;
+	margin: auto;
+	margin-top: 170px;
+	left: 0;
+	right: 0;
+	z-index: 7;
+}
+
+.battle {
+	position: absolute;
+	width: 350px;
+	height: 150px;
+	left: 0;
+	top: 0;
+}
+
+.battle h1 {
+	padding-top: 5px;
+	text-align: center;
+	font-family: 'Patua One', cursive;
+	font-weight: normal;
+	font-size: 33px;
+}
+
+.battle-actions {
+	width: 162px;
+	height: 46px;
+	float: left;
+	background: #eeeeee;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 46px;
+	border: solid 2px #ffffff;
+}
+
+
+.battle-attack {
+	margin-left: 6px!important;
+	margin-right: 6px;
+}
+
+.battle-you {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin: 0px 0px 65px 20px;
+	clear: both;
+}
+
+.battle-boss {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin: 0px 10px 65px 0px;
+}
+
+.button {
+	position: absolute;
+	bottom: 0;
+	height: 50px;
+	width: 350px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 50px;
+	color: #aaaaaa;
+	border-bottom: solid 4px #aaaaaa;
+	background-color: #ffffff;
+	text-align: center;
+	text-decoration: line-through;
+}
+</style>

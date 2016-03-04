@@ -1,5 +1,5 @@
 body {
-	background: url("../imgs/tempbg.gif") fixed repeat-x;
+	background: url("../imgs/bg.png") fixed repeat-x!important;
 	background-size: auto 100%;
 	background-color: #d69eea;
 	/*background-position: center;
@@ -17,6 +17,8 @@ a {
 	height: 620px;
 	margin: auto;
 	position: relative;
+	padding: 0px 15px 0px 15px;	
+	background-color: rgba(255,255,255,.2);
 }
 
 #content {

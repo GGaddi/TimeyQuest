@@ -7,6 +7,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="/js/timer.js"></script>
+	<script src="/js/boss.js"></script>
 	{{> imports}}
 
 	<script>
@@ -18,6 +19,8 @@
 </head>
 
 <body>
+
+	{{> boss}}
 
 	<div id="wrap">
 		<div id="content">
@@ -31,8 +34,8 @@
 				</div>
 				<div class="progress"><div class="adv-progress" style="width: 0px;">&nbsp;</div></div>
 			</div>
-			<img src="../imgs/avatar-mini.png"/>
-			<button type="button" name="end" onclick="location.href = 'home';">end adventure</button>
+			<img src="../imgs/avatar-mini.png" id="walking"/>
+			<button type="button" name="end" onclick="location.href = 'home';" id="end-adv">end adventure</button>
 		</div>
 
 		{{> stats}}

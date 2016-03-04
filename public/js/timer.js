@@ -177,6 +177,7 @@
     if(finalValues.length === 0){
       this.clearTimer(element);
       element.trigger('complete');
+      $('#boss-prompt').show();
       return false;
     }
 

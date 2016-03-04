@@ -20,14 +20,14 @@ function beginAdventure(e){
 	var secondsB = (hoursB*60*60) + minsB*60;
 	var seconds = (hours*60*60) + (mins*60);
 
-	if( seconds < 2700 || secondsB < 1800 ) {
+/*	if( seconds < 2700 || secondsB < 1800 ) {
 		e.preventDefault();
 		$('.badtime').show();
 	}
-	else {
+	else {*/
     	localStorage.setItem("time", seconds);
     	location.href = '/adventure';
-    }
+    //}
 }
 
 function beginGroupAdventure(e){
