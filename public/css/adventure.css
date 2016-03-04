@@ -1,6 +1,7 @@
 body {
-	background-image:url("");
-	background-color: #dddddd;
+	background: url("../imgs/bg.gif") center repeat-x;
+	background-size: auto 100%;
+	background-color: #d28bca;
 }
 
 #wrap {
