@@ -9,7 +9,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: #ffffff;
+	/*color: #ffffff;*/
 }
 
 #wrap {
@@ -18,7 +18,7 @@ a {
 	margin: auto;
 	position: relative;
 	padding: 0px 15px 0px 15px;	
-	background-color: rgba(255,255,255,.2);
+	background-color: rgba(255,255,255,.3);
 }
 
 #content {
@@ -194,12 +194,12 @@ a {
 	font-family: 'Patua One', cursive;
 	font-size: 15px;
 	text-decoration: none;
-	color: #555555;
+	color: #222222;
 }
 
 .menu-bottom a {
 	text-decoration: none;
-	color: #555555;
+	color: #222222;
 }
 
 
@@ -213,7 +213,12 @@ a {
 	font-family: 'Patua One', cursive;
 	font-size: 15px;
 	text-decoration: none;
-	color: #555555;
+	color: #000000;
+}
+
+.top-menu a, .top-menu-help a {
+	color: #000000;
+	text-decoration: none;
 }
 
 .top-menu-help {
@@ -223,7 +228,7 @@ a {
 	font-family: 'Patua One', cursive;
 	font-size: 13px;
 	text-decoration: none;
-	color: #555555;
+	color: #000000;
 	margin-top: -5px;
 	z-index: 25;
 }

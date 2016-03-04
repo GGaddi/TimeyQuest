@@ -3,6 +3,10 @@ body {
 	background-color: #dddddd;
 }
 
+#wrap {
+	background-color: transparent!important;
+}
+
 #timer {
 	margin-top: 50px;
 	margin-bottom: 265px;

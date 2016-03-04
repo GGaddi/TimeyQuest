@@ -3,6 +3,21 @@
 	<div class="boss-choice" id="boss-yes">yes</div> <div class="boss-choice" id="boss-no">no</div>
 </div>
 
+<div id="boss-defeated" class="boss-dialog">
+	<h1>congratulations!</h1>
+	<p>you hit the monster and it goes down like a chump. you don't get any rewards (yet), but at least you can brag?</p>
+</div>
+
+<div id="boss-victory" class="boss-dialog">
+	<h1>oh no...</h1>
+	<p>you run as fast as you can, the monster hot on your heels. thankfully, it gets distracted by some fruit over yonder -- a narrow escape!</p>
+</div>
+
+<div id="you-coward" class="boss-dialog">
+	<h1>a wise decision.</h1>
+	<p>it seems you're not up to the task of slaying the beast just yet. perhaps try again some other time?</p>
+</div>
+
 <div id="boss-fight">
 
 	<div class="battle">
@@ -14,11 +29,46 @@
 
 	<img src="../imgs/avatar-mini.png" class="battle-you"/>
 	<img src="http://placehold.it/150x150" class="battle-boss">
-	<div class="button">collect reward</div>
+	<button type="button" class="button">collect reward</button>
 
 </div>
 
 <style type="text/css">
+
+.boss-dialog {
+	position: absolute;
+	width: 346px;
+	height: 140px;
+	top: 0;
+	margin: auto;	
+	margin-top: 200px;
+	left: 0;
+	right: 0;
+	background-color: #eeeeee;
+	border: 2px solid #ffffff;
+	text-align: center;
+	z-index: 80;
+}
+
+.boss-dialog h1 {
+	padding-top: 5px;
+	text-align: center;
+	font-family: 'Patua One', cursive;
+	font-weight: normal;
+	font-size: 33px;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 15px;
+}
+
+.boss-dialog p {
+	font-family: 'Open Sans',sans-serif;
+	font-size: 13px;
+	line-height: 13px;
+	font-weight: normal;
+	padding: 8px;
+}
+
 #boss-prompt {
 	position: absolute;
 	width: 346px;
@@ -53,6 +103,7 @@
 	font-size: 25px;
 	font-weight: bold;
 	border-bottom: 3px solid #aaaaaa;
+	color: #000000;
 }
 
 #boss-fight {
@@ -94,6 +145,7 @@
 	font-weight: bold;
 	line-height: 46px;
 	border: solid 2px #ffffff;
+	color: #000000;
 }
 
 
@@ -132,5 +184,10 @@
 	background-color: #ffffff;
 	text-align: center;
 	text-decoration: line-through;
+}
+
+.completed {
+	text-decoration: none!important;
+	color: #000000!important;
 }
 </style>
