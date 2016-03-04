@@ -2,8 +2,8 @@
 var accountData = require('../accounts.json');
 
 exports.view = function(req, res){
-	console.log(req.query);
-	console.log(accountData);
+	//console.log(req.query);
+	//console.log(accountData);
 	var id = accountData['accounts'].length +1;
 	//console.log(id);
 	var username = req.query.username;
@@ -25,13 +25,13 @@ exports.view = function(req, res){
 	//$("#submitBtn")
 	//console.log(data);
 	};
-	console.log(username);
+	//console.log(username);
 	if(!username || !password || !email) {
 
 	}
 	else { 
-		console.log(newAccount);
-		accountData["accounts"].push(newAccount);
+		//console.log(newAccount);
+		//accountData["accounts"].push(newAccount);
 	}
 	res.render('index');
 };
