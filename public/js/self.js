@@ -1,8 +1,11 @@
 var nameChange;
 var messageChange;
+var key = localStorage.getItem("key");
+var database = new Firebase('https://vivid-heat-9192.firebaseio.com/accounts/' + key);
+async: true;
 
 $(document).ready(function(){
-	initializePage();
+	initializePage();	
 });
 
 function initializePage() {
@@ -10,8 +13,20 @@ function initializePage() {
 	$("#namebtnconfirm").click(confirmName);
 	$("#usermessage").click(editMsg);
 	$("#save").click(saveChanges);
+	$(".tabs img").click(displayEquipment);
+
+	$("body").on("click",".close", function() {
+		$('.equip-item').hide();
+	});
+
 	nameChange = 0;
 	messageChange = 0;
+}
+
+function displayEquipment(e) {
+	var type = $(this).attr('name');	
+	var name = $(this).attr('title');	
+	$('body').append('<div class="equip-item"><img src="imgs/items/t-001r.png"/><div class="item-name">'+name+'</div><div class="close">x</span></div>');
 }
 
 function editName (e) {
@@ -57,11 +72,18 @@ function saveChanges (e) {
 		var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
 		user.charName = localStorage.getItem("newName");
 		localStorage.setItem(localStorage.getItem("user"), JSON.stringify(user));
+		database.update({
+			"charName": localStorage.getItem("newName")
+		});
+		
 	}
 	if (messageChange == 1){
 		var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
 		user.message = document.getElementById("msgIn").value;//localStorage.getItem("newMessage");
 		localStorage.setItem(localStorage.getItem("user"), JSON.stringify(user));
+		database.update({
+			"message": document.getElementById("msgIn").value
+		});
 	}
 	/*var newNameWhole = document.getElementById("namefield").innerHTML;
 	var newName = newNameWhole.replace('<a href="#"><img src="http://placehold.it/15x15"/ id="namebtn"></a>', ''); */

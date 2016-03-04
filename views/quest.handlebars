@@ -15,6 +15,11 @@
 <body>
 
 	{{> help-quest}}
+	<div class="badtime">
+		<h1>uh-oh!</h1>
+		<p>Breaks can only happen every 30 minutes at most. Bosses will only appear after 45 minutes or more.</p>
+		<div class="closes">x</div>
+	</div>
 
 	<div id="wrap">
 		<div id="content">
@@ -35,7 +40,7 @@
 				<div id="boss-time">
 					every <input type="tel" name="boss-hr" id = "boss-hr" value="01"/> hours, <input type="tel" name="boss-min" id = "boss-min" value="00"/> minutes
 				</div>
-				<button type="button" name="begin" id = "begin" onclick="location.href = 'adventure';">begin adventure</button>
+				<button type="button" name="begin" id = "begin">begin adventure</button>
 			</form>
 		</div>
 

@@ -9,14 +9,17 @@
 	<link rel="stylesheet" type="text/css" href="/css/tabs.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
 	<script src="/js/equip-tabs.js"></script>
 	<script src="/js/help.js"></script>
+	<script src="/js/save-changes.js"></script>
 
 	{{> imports}}
 
 </head>
 
 <body>
+	{{> save-changes}}
 	{{> help-equip}}
 	<div id="wrap">
 		<div id="content">
@@ -139,7 +142,7 @@
 			</div>
 
 			<div id="buttons">
-				<img src="imgs/reset.png" id="reset"/><button type="button" name="save">save changes</button>
+				<img src="imgs/reset.png" id="reset"/><button type="button" name="save" class="save-changes">save changes</button>
 			</div>
 
 		</div>
