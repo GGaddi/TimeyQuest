@@ -118,11 +118,14 @@
     var endTime = secondsLeft + this.currentTime();
     var timeLeft = endTime - this.currentTime();
 
+    //$('adv-progress').css("style","width:"+((endTime-timeLeft)/endTime)+"%;");
+
     this.setFinalValue(this.formatTimeLeft(timeLeft), element);
 
     intervalId = setInterval((function() {
       timeLeft = endTime - this.currentTime();
       this.setFinalValue(this.formatTimeLeft(timeLeft), element);
+      $('.adv-progress').css("width",((secondsLeft-timeLeft)*100/secondsLeft)+'%');
     }.bind(this)), refreshRate);
 
     element.intervalId = intervalId;
@@ -164,6 +167,7 @@
     if (+hours === 0 && +minutes === 0 && +seconds === 0) {
       return [];
     } else {
+        //$('adv-progress').css("style","width:"+((endTime-timeLeft)/endTime)+"%;");
       return [lpad(hours), lpad(minutes), lpad(seconds)];
     }
   };
