@@ -1,6 +1,10 @@
 body {
-	background-image:url("");
-	background-color: #dddddd;
+	background: url("../imgs/tempbg.gif") fixed repeat-x;
+	background-size: auto 100%;
+	background-color: #d69eea;
+	/*background-position: center;
+	background-repeat: repeat-x;
+	background-color: #05180e;*/
 }
 
 #content {
