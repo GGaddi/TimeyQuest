@@ -1,7 +1,7 @@
 body {
-	background: url("../imgs/tempbg.gif") fixed repeat-x;
+	background: url("../imgs/bg.png") center repeat-x;
 	background-size: auto 100%;
-	background-color: #d69eea;
+	background-color: #d28bca;
 	/*background-position: center;
 	background-repeat: repeat-x;
 	background-color: #05180e;*/
@@ -9,7 +9,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: #555555;
+	color: #ffffff;
 }
 
 #wrap {
@@ -224,11 +224,6 @@ a {
 	color: #555555;
 	margin-top: -5px;
 	z-index: 25;
-}
-
-.top-menu a {
-	text-decoration: none;
-	color: #555555;
 }
 
 /*.menu-link {
