@@ -89,13 +89,14 @@ function saveChanges (e) {
 			"message": document.getElementById("msgIn").value
 		});
 	}
-	if ( $('input[type=checkbox]:checked') )
+	if ( $('#privacy').is(":checked") ){
 		database.update({
-			"privacy":true
+			"privacy": true
 		});
+	}
 	else {
 		database.update({
-			"privacy":false
+			"privacy": false
 		});
 	}
 	/*var newNameWhole = document.getElementById("namefield").innerHTML;
