@@ -171,12 +171,12 @@ function handleLogin(result){
 				"level": 1,
 				"currency": 1000,
 				"message": "enter a personal message here...",
-				"item-head": 0,
-				"item-top": 0,
-				"item-bottom": 0,
-				"item-hat": 0,
-				"item-weapon": 0,
-				"item-pet": 0
+				"itemHead": 0,
+				"itemTop": 0,
+				"itemBottom": 0,
+				"itemHat": 0,
+				"itemWeapon": 0,
+				"itemPet": 0
 			};
 			dataRef.push(jsonObj);
 			dataRef.once("value", function(snapshot) {
