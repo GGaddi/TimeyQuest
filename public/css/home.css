@@ -53,3 +53,27 @@ button[type="button"] {
 	color: #000000;
 	border-bottom: solid 4px #aaaaaa;
 }
+
+#avvie {
+	position: relative;
+	height: 225px;
+	width: 225px;
+	margin: auto;
+}
+
+#base {
+	z-index: 1;
+}
+
+#top { z-index: 3; }
+#bottom { z-index: 2; }
+#hat { z-index: 5; }
+#weapon { z-index: 6; }
+#style { z-index: 4; }
+#pet { z-index: 7; }
+
+.clothes {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
